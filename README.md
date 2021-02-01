@@ -1,2 +1,2 @@
 # jatin
-all things that I (jatin) do will add here
+all things that I do will add here
