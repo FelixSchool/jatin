@@ -1,1 +1,59 @@
-# first line 
+import sys
+import csv
+avg = 0
+namex = list()
+
+def main():    
+    if sys.argv[1] == 'add':
+        add(sys.argv[2], sys.argv[3])
+        if avg == 0:
+            avg = float(sys.argv[3])
+        else:
+            avg = float((avg + sys.argv[3])/2)
+        print(avg)
+    elif sys.argv[1] == 'printexpense':
+        printexpense()
+    elif sys.argv[1] == 'summarize':
+        summarize()
+
+def add(name, amount):
+    with open(r'C:\Users\MAHESH\Desktop\abc.csv', 'a', encoding = 'utf-8') as file:
+        writer = csv.writer(file)
+        writer.writerow([name, amount])
+        
+def printexpense():
+    with open(r'C:\Users\MAHESH\Desktop\abc.csv', 'r', encoding = 'utf-8') as file:
+        reader = csv.reader(file)
+        for row in reader:
+            print(row)
+            
+def summarize():
+    with open(r'C:\Users\MAHESH\Desktop\abc.csv', 'r', encoding = 'utf-8') as file:
+        linecount = +0
+        reader = csv.reader(file)
+        print('this is above for loop')
+        for row in reader:
+            print('this is just in side for loop')
+            namex = row
+            if linecount == 0:
+                print(avg)
+                print('this is just inside if loop')
+                print(linecount)
+                linecount += 1
+                print(linecount)
+                break
+            elif linecount > 0:
+                print('this is just in side elif loop')
+                if namex[1] > avg:
+                 temp = float(namex[1]) - avg
+                    x = str(temp)
+                    print(str(namex[0]) + ' receives ' + x)
+                elif namex[1] < avg:
+                    temp = avg - float(namex[1]) 
+                    print(str(namex[0]) + ' pays ' + str(temp))
+                elif namex[1] == avg:
+                    print(str(namex[0]) + ' pays none recives none.')
+
+
+if __name__ == "__main__":
+    main()
