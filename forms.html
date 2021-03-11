@@ -1,0 +1,42 @@
+<!DOC html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="medical survey forms">
+		<title>Forms</title>
+	</head>
+	<body>
+        <h2>Medical Survey</h2>
+        <h4>Please note that there are no right or wrong answers.</h4>
+        
+        <form action="/my-handling-form-page" method="post">
+            <p>Name:</p>
+            <input type="text" />
+            <p>Email:</p>
+            <input type="email" />
+            <p>Phone Number:</p>
+            <input type="number" />
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <p>If there are any diseases that runs through the family, please tick all those that apply.</p>
+            <input type="checkbox" id="one" name="one" value="diabetes">
+            <label for="two">dibtes</label>
+            <input type="checkbox" id="two" name="two" value="alzheimer">
+            <label for="two">alzheimer</label>
+            <input type="checkbox" id="three" name="three" value="Thalassemia">
+            <label for="three">Thalassemia</label>
+            <input type="checkbox" id="four" name="four" value="Down Syndrome">
+            <label for="four">Down Syndrome</label>
+            <p>any thing that you'd like to tell us?</p>
+            <textarea rows="10" cols="30">
+                
+            </textarea>
+            <br>
+            <div><input type="submit" /></div>
+            <div><input type="reset" /></div>
+		</form>
+    </body>
+</html>
