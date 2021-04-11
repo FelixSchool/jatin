@@ -1,5 +1,5 @@
 
--- Insearting data and finding answer to nusiness questions
+-- Inserting data and finding answer to nusiness questions
 
 -- Q. 1
 SELECT COUNT(*)
