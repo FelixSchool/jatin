@@ -1,0 +1,22 @@
+html {
+    background-color: #00539F;
+  }
+
+body {
+    background: lightskyblue;
+    text-align: center;-*
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #00539F;
+}
+
+body {
+    width: 1200px;
+    margin: 20px auto;
+    background-color: #FF9500;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
