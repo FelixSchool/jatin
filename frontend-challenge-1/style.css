@@ -1,0 +1,378 @@
+#top-bar {
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #A4C63B;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#time-call, #SM {
+    display: flex;
+    flex-direction: row;
+}
+
+.SM {
+    padding: 10px;
+}
+
+.SM:hover {
+    background-color: hotpink;
+}
+
+#hero {
+    margin-top: 50px;
+    /*background-color: indianred;*/
+    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 10px 0px 150px 0px;
+}
+
+#top {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:stretch;
+    gap: 500px;
+    padding-top: 30px;
+}
+
+ul {
+    padding-right: 0px;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+li:hover {
+    background-color: white;
+    color: #A4C63B;
+}
+
+#content {
+    margin-top: 50px;
+    margin-left: 200px;
+    max-width: 400px;
+    line-height: 40px;
+}
+
+.button {
+    background-color: #A4C63B;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+    border: 0px;
+    transition: transform .2s;
+}
+
+.button:hover {
+    transform:scale(1.5);
+}
+
+.border-button {
+    background-color: #A4C63B;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+    border: 2px solid white;
+    transition: transform .2s;
+}
+
+.border-button:hover {
+    transform:scale(1.5);
+}
+
+#mini-call-back {
+    background-color: #A4C63B;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-evenly;*/
+    align-items: center;
+    gap: 500px;
+    padding: 20px 0px 20px 0px;
+}
+
+#mini-call-back h3 {
+    font-size: 26px;
+}
+
+#mini-call-back p {
+    font-size: 18px;
+}
+
+#title-fin-serv {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    margin: 100px 0px 100px 0px;
+}
+
+#title-fin-serv h2 {
+    font-weight: 700;
+    font-size: 34px;
+}
+
+#card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card {
+    background-color: #F7F7F7;
+    width: 400px;
+    margin: 0px 0px 100px 0px;
+}
+
+.card h4 {
+    font-size: 22px;
+    font-weight:bold;
+    padding-left: 30px;
+}
+
+.card p {
+    font-size: 18px;
+    padding-left: 30px;
+    width: 300px;
+}
+
+.card .button {
+    margin: 20px 20px 20px 20px;
+}
+
+#business-growth {
+    background-color: #232323;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 200px 0px 200px 0px;
+    gap: 100px;
+}
+
+#bg-1 {
+    width: 900px;
+    margin-left: 150px;
+    color: white;
+}
+
+#bg-1 .button {
+    margin: 20px 20px 20px 0px;
+}
+
+#bg-1 h2 {
+    font-size: 42px;
+}
+
+#bg-1 p {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+#bg-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:center;
+    align-content: center;
+    margin-right: 190px;
+    gap: 30px;
+}
+
+.bg-card {
+    padding: 10px 10px 10px 10px;
+    width: 180px;
+    text-align: center;
+    background-color: #383838;
+}
+
+.bg-card h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.bg-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+#who-we-are {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    margin: 125px 125px 125px 125px;
+}
+
+#who-we-are-2 {
+    background-color: #F7F7F7;
+    padding: 50px 150px 50px 50px;
+}
+
+#who-we-are-2 h2 {
+    font-size: 36px;
+}
+
+#who-we-are-2 p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#testimonial {
+    background-color: #F7F7F7;
+    padding: 100px 100px 150px 100px;
+}
+
+#header-testimonial {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#header-testimonial h2 {
+    font-size: 36px;
+}
+
+#inside-testimonial {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    align-content: center;
+}
+
+.inside-testimonial {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.inside-testimonial h3 {
+    font-size: 28px;
+}
+
+.inside-testimonial p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+#header-call-back {
+    text-align: center;
+    padding: 100px 100px 50px 100px;
+}
+
+#header-call-back h2 {
+    font-size: 36px;
+}
+
+.form {
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 10px;
+    border: 0px;
+    margin: 10px 5px 10px 5px;
+}
+
+#form-1 {
+    width: 1000px;
+    text-align:center;
+}
+
+.form-2 {
+    width: 960px;
+    height: 100px;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    margin: 20px 20px 0px 0px;
+    border: 0px;
+}
+
+#form {
+    background-color: #A4C63B;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.form-button {
+    margin: 30px 0px 0px 0px;
+    text-align: center;
+}
+
+#client-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: #F7F7F7;
+}
+
+.client-logo {
+    width: 150px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:stretch;
+    gap: 50px;
+    padding: 100px 50px 100px 50px;
+    color: white;
+    background-color: #232323;
+}
+
+.upper {
+    width: 200px;
+}
+
+.upper h3 {
+    font-size: 24px;
+
+}
+
+.upper-form {
+    border: 0px;
+    border-radius: 10px;
+    width: 250px;
+    height: 30px;
+    margin: 10px 0px 10px 0px;
+    padding-left: 10px;
+}
+
+#lower {
+    background-color: #343434;
+    text-align: center;
+    padding: 10px;
+}
+
+#lower p {
+    font-size: 20px;
+    color: white;
+}
